@@ -3,18 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Website</title>
+    <title>Cleron - Specialists in Machine Tools</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f3f3f3;
         }
         header {
-            background-color: #4CAF50;
+            background-image: url('https://via.placeholder.com/1600x400'); /* Placeholder for a hero image */
+            background-size: cover;
             color: white;
-            padding: 15px;
+            padding: 60px 20px;
             text-align: center;
+        }
+        header h1 {
+            font-size: 50px;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        header p {
+            font-size: 20px;
+            margin-top: 10px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
         }
         nav {
             background-color: #333;
@@ -25,56 +37,113 @@
             display: block;
             color: white;
             text-align: center;
-            padding: 14px 20px;
+            padding: 16px 20px;
             text-decoration: none;
+            font-weight: bold;
         }
         nav a:hover {
-            background-color: #ddd;
-            color: black;
+            background-color: #555;
+            color: white;
         }
         main {
             padding: 20px;
+            text-align: center;
+        }
+        .section-title {
+            color: #e76f51;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .services-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            list-style-type: none;
+            padding: 0;
+        }
+        .services-list li {
+            background-color: #2a9d8f;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            width: 200px;
+            text-align: center;
+        }
+        .services-list li:hover {
+            background-color: #264653;
         }
         footer {
-            background-color: #333;
+            background-color: #264653;
             color: white;
             text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
+            padding: 20px 0;
+            position: relative;
             bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .services-list {
+                flex-direction: column;
+                align-items: center;
+            }
+            header h1 {
+                font-size: 36px;
+            }
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Welcome to My Simple Website</h1>
+        <h1>Cleron</h1>
+        <p>Specialists in Precision Machine Tools</p>
     </header>
 
     <nav>
         <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Our Services</a>
+        <a href="#contact">Contact Us</a>
     </nav>
 
     <main>
-        <h2>Home</h2>
-        <p>This is the home section of the website. You can add more content here.</p>
+        <section id="home">
+            <h2 class="section-title">Welcome to Cleron</h2>
+            <p>At Cleron, we specialize in providing state-of-the-art machine tools for various industries. Our precision tools are designed to help manufacturers improve efficiency, accuracy, and production speed.</p>
+            <img src="https://via.placeholder.com/800x400" alt="Machine tools" style="max-width:100%; height:auto; border-radius: 10px;">
+        </section>
 
-        <h2>About</h2>
-        <p>This section provides information about the website or yourself.</p>
+        <section id="about">
+            <h2 class="section-title">About Us</h2>
+            <p>Founded in 1990, Cleron has become a leader in the machine tool industry. With decades of experience, we are dedicated to innovation, quality, and customer satisfaction.</p>
+        </section>
 
-        <h2>Services</h2>
-        <p>List the services you offer or provide more details about what you do.</p>
+        <section id="services">
+            <h2 class="section-title">Our Services</h2>
+            <ul class="services-list">
+                <li>Custom Machine Tools</li>
+                <li>Maintenance & Support</li>
+                <li>Automation Solutions</li>
+                <li>Precision Engineering</li>
+                <li>Consulting Services</li>
+            </ul>
+        </section>
 
-        <h2>Contact</h2>
-        <p>You can include your contact information here.</p>
+        <section id="contact">
+            <h2 class="section-title">Contact Us</h2>
+            <p>Get in touch with us for inquiries, partnerships, or to learn more about how Cleron can help your business. Reach us at:</p>
+            <p>Email: <a href="mailto:contact@cleron.com">contact@cleron.com</a> | Phone: (123) 456-7890</p>
+        </section>
     </main>
 
     <footer>
-        <p>© 2024 My Simple Website | All rights reserved.</p>
+        <p>© 2024 Cleron | Precision Machine Tools for a Modern World</p>
     </footer>
 
 </body>
