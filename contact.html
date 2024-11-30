@@ -14,11 +14,38 @@
         header {
             background-color: #264653;
             color: white;
-            padding: 40px;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            position: relative;
         }
-        header h1 {
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            height: 50px;
+            margin-right: 10px;
+        }
+        .logo-text {
+            line-height: 1.2;
+        }
+        .logo-text h1 {
+            font-size: 24px;
             margin: 0;
+        }
+        .logo-text p {
+            font-size: 14px;
+            margin: 0;
+        }
+        .contact-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 28px;
+            font-weight: bold;
         }
         nav {
             background-color: #333;
@@ -65,7 +92,18 @@
 <body>
 
     <header>
-        <h1>Contact Cleron</h1>
+        <!-- Logo, Name, and Slogan Together -->
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="images/cleron_logo.jpeg" alt="Cleron Logo" class="logo">
+            </a>
+            <div class="logo-text">
+                <h1>Cleron</h1>
+                <p>Defect Free Machining</p>
+            </div>
+        </div>
+        <!-- Centered Title -->
+        <div class="contact-title">Contact</div>
     </header>
 
     <nav>
@@ -77,13 +115,12 @@
         <a href="contact.html">Contact Us</a>
     </nav>
 
-
     <main>
         <div class="contact-info">
             <h2>Contact Details</h2>
             <p>Email: <a href="mailto:clerontechnologies@gmail.com">clerontechnologies@gmail.com</a></p>
             <p>Phone: (+91) 9962580995</p>
-            <p>Address: Kelambakkam, Chennai 603103, India </p>
+            <p>Address: Kelambakkam, Chennai 603103, India</p>
             <p>Feel free to reach out to us for any inquiries or support!</p>
         </div>
     </main>

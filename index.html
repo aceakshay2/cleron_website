@@ -16,15 +16,36 @@
             color: white;
             display: flex;
             align-items: center;
+            justify-content: space-between;
             padding: 10px 20px;
+            position: relative;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
         }
         .logo {
             height: 50px;
-            margin-right: 20px;
+            margin-right: 10px;
         }
-        header h1 {
+        .logo-text {
+            line-height: 1.2;
+        }
+        .logo-text h1 {
             font-size: 24px;
             margin: 0;
+        }
+        .logo-text p {
+            font-size: 14px;
+            margin: 0;
+        }
+        .home-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 28px;
+            font-weight: bold;
         }
         nav {
             background-color: #333;
@@ -65,15 +86,18 @@
 <body>
 
     <header>
-        <!-- Logo in the Top-Left -->
-        <a href="index.html">
-        <img src="images/cleron_logo.jpeg" alt="Cleron Logo" class="logo">
-        </a>
-        <!-- Company Name and Slogan -->
-        <div>
-            <h1>Cleron</h1>
-            <p>Defect Free Machining</p>
+        <!-- Logo, Name, and Slogan Together -->
+        <div class="logo-container">
+            <a href="index.html">
+            <img src="images/cleron_logo.jpeg" alt="Cleron Logo" class="logo">
+            </a>
+            <div class="logo-text">
+                <h1>Cleron</h1>
+                <p>Defect Free Machining</p>
+            </div>
         </div>
+        <!-- Centered Title -->
+        <div class="home-title">Home</div>
     </header>
 
     <nav>
