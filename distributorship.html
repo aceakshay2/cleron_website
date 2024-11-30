@@ -14,11 +14,38 @@
         header {
             background-color: #264653;
             color: white;
-            padding: 40px;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            position: relative;
         }
-        header h1 {
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            height: 50px;
+            margin-right: 10px;
+        }
+        .logo-text {
+            line-height: 1.2;
+        }
+        .logo-text h1 {
+            font-size: 24px;
             margin: 0;
+        }
+        .logo-text p {
+            font-size: 14px;
+            margin: 0;
+        }
+        .distributorship-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 28px;
+            font-weight: bold;
         }
         nav {
             background-color: #333;
@@ -62,7 +89,18 @@
 <body>
 
     <header>
-        <h1>Cleron Distributorship</h1>
+        <!-- Logo, Name, and Slogan Together -->
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="images/cleron_logo.jpeg" alt="Cleron Logo" class="logo">
+            </a>
+            <div class="logo-text">
+                <h1>Cleron</h1>
+                <p>Defect Free Machining</p>
+            </div>
+        </div>
+        <!-- Centered Title -->
+        <div class="distributorship-title">Cleron Distributorship</div>
     </header>
 
     <nav>
@@ -79,7 +117,7 @@
             <h2>Official Distribution Partner</h2>
             <p>Cleron is proud to be the official distribution partner of <strong>Kyocera Cutting Tools</strong>. We bring you the highest quality cutting tools to meet your industrial needs with precision and efficiency.</p>
             <!-- Inserting Image -->
-            <img src="images/kyocera.jpeg" alt="Kyocera Cutting Tools">
+            <img src="images/kyocera.jpeg" alt="Kyocera Cutting Tools" style="max-width:100%; border-radius:8px;">
             <p>With Kyocera's innovative cutting solutions and Cleron's reliable services, we ensure that your operations are equipped with the best tools in the market.</p>
             <p>Contact us today to learn more about our partnership and how we can support your cutting tool requirements.</p>
         </div>
