@@ -14,11 +14,38 @@
         header {
             background-color: #264653;
             color: white;
-            padding: 40px;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            position: relative;
         }
-        header h1 {
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            height: 50px;
+            margin-right: 10px;
+        }
+        .logo-text {
+            line-height: 1.2;
+        }
+        .logo-text h1 {
+            font-size: 24px;
             margin: 0;
+        }
+        .logo-text p {
+            font-size: 14px;
+            margin: 0;
+        }
+        .products-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 28px;
+            font-weight: bold;
         }
         nav {
             background-color: #333;
@@ -84,7 +111,18 @@
 <body>
 
     <header>
-        <h1>Our Products</h1>
+        <!-- Logo, Name, and Slogan Together -->
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="images/cleron_logo.jpeg" alt="Cleron Logo" class="logo">
+            </a>
+            <div class="logo-text">
+                <h1>Cleron</h1>
+                <p>Defect Free Machining</p>
+            </div>
+        </div>
+        <!-- Centered Title -->
+        <div class="products-title">Our Products</div>
     </header>
 
     <nav>
@@ -101,40 +139,30 @@
         <h2 class="section-title">Explore solutions for defect free machining</h2>
         <div class="product-list">
             <div class="product-card">
-                <img src="images/tbds003.jpg" alt="Product 1">
+                <img src="images/tbds003.jpg" alt="Tool Breakage Detection Sensors">
                 <h3>Tool Breakage Detection Sensors / Tool Setter (TBDS 003)</h3>
                 <p>Advanced sensors to detect tool breakage with precision and speed.</p>
-                <p>To place order or make enquires you can mail us at : <a href="mailto:clerontechnologies@gmail.com">clerontechnologies@gmail.com</a> .</p>
-                <p> OR</p>
-                <!-- Embedded Amazon Link -->
-                <a href="https://www.amazon.in/CLERON-Single-Breakage-Detection-Sensor/dp/B0DN1NF64K/ref=sr_1_1?crid=10GK71P05PCFR&dib=eyJ2IjoiMSJ9.ZSw0L7t2jQnsHPK1KFex7GyzDKBkvi0odmOCUL2OXxZ9fZv_Y9SY5av4fO-VF_oTCfASWQsGpxKxt1blRXtdHIiQnr3qkIF2HGcmvBRt5p4.e36saFP88fjDbhKZuSmhltcta877VM67raY2baDEyNU&dib_tag=se&keywords=cleron&qid=1732875261&sprefix=cleron%2Caps%2C293&sr=8-1" target="_blank">
+                <p>To place orders or make inquiries, you can email us at: <a href="mailto:clerontechnologies@gmail.com">clerontechnologies@gmail.com</a>.</p>
+                <p>OR</p>
+                <a href="https://www.amazon.in/CLERON-Single-Breakage-Detection-Sensor/dp/B0DN1NF64K" target="_blank">
                     Buy Now on Amazon
                 </a>
-                <!-- Download Datasheet Section -->
                 <div class="download-section">
-                    <a href="documents/tbds003_datasheet.pdf" download>
-                        Download Datasheet
-                    </a>
+                    <a href="documents/tbds003_datasheet.pdf" download>Download Datasheet</a>
                 </div>
-
             </div>
             <div class="product-card">
-                <img src="images/tapt.png" alt="Product 2">
+                <img src="images/tapt.png" alt="Tri Axis Touch Probe">
                 <h3>Tri Axis Touch Probe (TATP 001) / Tool Setter</h3>
                 <p>State-of-the-art touch probes for enhanced precision and productivity.</p>
-                <p>To place order or make enquires you can mail us at : <a href="mailto:clerontechnologies@gmail.com">clerontechnologies@gmail.com</a> .</p>
-                <p> OR</p>
-                <!-- Embedded Amazon Link -->
-                <a href="https://www.amazon.in/CLERON-Single-Breakage-Detection-Sensor/dp/B0DN1NF64K/ref=sr_1_1?crid=10GK71P05PCFR&dib=eyJ2IjoiMSJ9.ZSw0L7t2jQnsHPK1KFex7GyzDKBkvi0odmOCUL2OXxZ9fZv_Y9SY5av4fO-VF_oTCfASWQsGpxKxt1blRXtdHIiQnr3qkIF2HGcmvBRt5p4.e36saFP88fjDbhKZuSmhltcta877VM67raY2baDEyNU&dib_tag=se&keywords=cleron&qid=1732875261&sprefix=cleron%2Caps%2C293&sr=8-1" target="_blank">
+                <p>To place orders or make inquiries, you can email us at: <a href="mailto:clerontechnologies@gmail.com">clerontechnologies@gmail.com</a>.</p>
+                <p>OR</p>
+                <a href="https://www.amazon.in/CLERON-Single-Breakage-Detection-Sensor/dp/B0DN1NF64K" target="_blank">
                     Buy Now on Amazon
                 </a>
-                <!-- Download Datasheet Section -->
                 <div class="download-section">
-                    <a href="documents/sample.pdf" download>
-                        Download Datasheet
-                    </a>
+                    <a href="documents/sample.pdf" download>Download Datasheet</a>
                 </div>
-
             </div>
         </div>
     </main>
