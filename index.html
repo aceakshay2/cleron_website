@@ -14,10 +14,16 @@
         header {
             background-color: #264653;
             color: white;
-            padding: 40px;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .logo {
+            height: 50px;
+            margin-right: 20px;
         }
         header h1 {
+            font-size: 24px;
             margin: 0;
         }
         nav {
@@ -40,42 +46,34 @@
             padding: 20px;
             text-align: center;
         }
-        .services-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
-        }
-        .service-card {
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            padding: 20px;
-            text-align: left;
-        }
-        .service-card h3 {
+        .section-title {
             color: #e76f51;
-        }
-        .service-card p {
-            color: #333;
-            font-size: 16px;
+            font-size: 28px;
+            margin-bottom: 20px;
         }
         footer {
             background-color: #264653;
             color: white;
             text-align: center;
             padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
     </style>
-
 </head>
 <body>
 
     <header>
-        <h1>Cleron</h1>
-        <p>Defect free machining</p>
+        <!-- Logo in the Top-Left -->
+        <a href="index.html">
+        <img src="images/cleron_logo.jpeg" alt="Cleron Logo" class="logo">
+        </a>
+        <!-- Company Name and Slogan -->
+        <div>
+            <h1>Cleron</h1>
+            <p>Defect Free Machining</p>
+        </div>
     </header>
 
     <nav>
@@ -104,7 +102,6 @@
                 </iframe>
             </div>
         </section>
-
     </main>
 
     <footer>
